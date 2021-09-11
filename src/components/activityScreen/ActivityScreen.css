@@ -1,0 +1,80 @@
+.activityScreen {
+  color: #e5e5e5;
+  font-family: coanda;
+  font-size: 9px;
+  padding: 0 20px;
+  transition: all 0.3s linear;
+  margin: 3rem auto 0 auto;
+  width: 100%;
+}
+.activityScreen header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.activityScreen header span:nth-child(2):hover {
+  color: #f4ea2f;
+  cursor: pointer;
+}
+.activityScreen .activityTable {
+  border: 2.96566px solid #f4ea2f;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  height: 40rem;
+  overflow-y: scroll;
+}
+.activityScreen .activityTable .activityItem {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+.activityScreen .activityTable .activityItem:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.activityScreen .activityTable .activityItem .img {
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  width: 50px;
+  height: 50px;
+}
+.activityScreen .activityTable .activityItem .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 80%;
+  padding: 0 1rem;
+}
+.activityScreen .activityTable .activityItem .detail p {
+  margin-bottom: 5px;
+}
+.activityScreen .activityTable .activityItem .amount {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .activityScreen {
+    margin: 3rem auto 0 auto;
+  }
+  .activityScreen header {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .activityScreen {
+    max-width: 80%;
+  }
+  .activityScreen header {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .activityScreen {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+}

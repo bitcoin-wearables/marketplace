@@ -1,0 +1,64 @@
+.productCard {
+  position: relative;
+  background-color: #1c1c1c;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  color: #f4ea2f;
+  align-items: center;
+  height: 22rem;
+  max-width: 18rem;
+  margin: 15px 15px;
+  transition: all 0.3s linear;
+  box-shadow: 0px 0px 20px 20px rgb(0 0 0 / 40%);
+}
+.productCard .imgDiv {
+  margin-top: 4rem;
+  border: 3px solid #f4ea2f;
+  display: flex;
+}
+.productCard .imgDiv img {
+  object-fit: contain;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+.productCard .cardBody {
+  width: 100%;
+  font-family: coanda;
+  font-size: 10px;
+  font-weight: 100;
+}
+.productCard .cardBody .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.productCard .cardBody .top button {
+  border: transparent;
+  background-color: #f4ea2f;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+.productCard .cardBody .top button:hover {
+  background-color: #7a773a;
+  color: white;
+}
+
+.productCard .fa-ellipsis-h {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  color: #f4ea2f;
+  cursor: pointer;
+}
+.productCard .fa-share-alt {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  color: #f4ea2f;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

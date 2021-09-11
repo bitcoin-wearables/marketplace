@@ -1,0 +1,111 @@
+ul {
+  list-style-type: none;
+}
+
+.footer-container {
+  border-top: 1px solid #313131;
+  margin-top: 5rem;
+  padding: 2rem 20px 0;
+  align-items: center;
+  width: 100%;
+}
+.footer-container .page_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-family: poppins;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  justify-items: center;
+}
+
+.footer-container .page_info ul:nth-child(1) {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.footer-container .page_info .about {
+  /* margin: 0 auto; */
+  text-align: left;
+}
+.footer-container .page_info .about h3::after {
+  content: "\2122";
+  top: -5px;
+  position: relative;
+}
+.footer-container .page_info .about p {
+  font-size: 0.5rem;
+  font-weight: lighter;
+}
+
+.footer-container .social_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer-container .social_info ul:nth-child(1) {
+  display: flex;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.footer-container .social_info ul:nth-child(2) {
+  display: flex;
+  justify-content: left;
+  font-size: 0.5rem;
+  line-height: 1.5rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+/* .footer-container .social_info ul:nth-child(2) svg path {
+  fill: red;
+} */
+.footer-container .social_info ul object {
+  width: 18px;
+}
+.footer-container .social_info ul li:nth-child(1) object {
+  width: 10px;
+}
+
+.footer-container .social_info ul li:not(:last-child) {
+  margin-right: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .footer-container .social_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  .footer-container .page_info .about p {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+}
+@media only screen and (min-width: 720px) {
+  .footer-container {
+    padding: 2rem 10% 0;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .footer-container .social_info ul li {
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  /* .footer-container {
+    width: 50%;
+  } */
+}

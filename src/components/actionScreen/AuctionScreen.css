@@ -1,0 +1,64 @@
+.auctionScreen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  padding: 0 20px;
+  justify-items: center;
+  margin-top: 3rem;
+  transition: all 0.3s linear;
+}
+.auctionScreen .auctionHeader {
+  text-align: center;
+  font-family: coanda;
+  flex: 1;
+}
+.auctionScreen .auctionHeader h2 {
+  font-size: 3rem;
+}
+.auctionScreen .auctionHeader font {
+  display: block;
+  margin-bottom: 10px;
+}
+.auctionScreen .auctionContent {
+  border: 2px solid #f4ea2f;
+  border-radius: 2rem;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.auctionScreen .auctionContent .fa-ellipsis-h {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.auctionScreen .auctionContent img {
+  height: 20rem;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 600px) {
+  .auctionScreen {
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    /* grid-column-gap: 25px; */
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .auctionScreen {
+    width: 90%;
+    align-items: end;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .auctionScreen {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1900px) {
+}

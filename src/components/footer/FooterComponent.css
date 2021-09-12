@@ -26,6 +26,9 @@ ul {
   margin-bottom: 2rem;
   cursor: pointer;
 }
+.footer-container .page_info ul li {
+  cursor: pointer;
+}
 .footer-container .page_info .about {
   /* margin: 0 auto; */
   text-align: left;
@@ -52,6 +55,8 @@ ul {
   font-size: 0.5rem;
   margin-bottom: 1rem;
   flex: 1;
+}
+.footer-container .social_info ul li {
   cursor: pointer;
 }
 
@@ -61,12 +66,12 @@ ul {
   font-size: 0.5rem;
   line-height: 1.5rem;
   flex: 1;
-  cursor: pointer;
 }
 
-/* .footer-container .social_info ul:nth-child(2) svg path {
-  fill: red;
+/* .footer-container .social_info ul:nth-child(2)li {
+  cursor: pointer;
 } */
+
 .footer-container .social_info ul object {
   width: 18px;
 }

@@ -6,11 +6,17 @@
 .productPageContainer header {
   font-family: coanda;
   font-size: 3rem;
-  margin-left: 6.2rem;
+
   margin-bottom: 2rem;
 }
 .productPageBody {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 600px) {
+  .productPageContainer header {
+    margin-left: 6.2rem;
+  }
 }

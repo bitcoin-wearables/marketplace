@@ -9,8 +9,9 @@ function AuctionScreen() {
   const [timerHours, setTImerHours] = useState("00");
   const [timerMinutes, setTImerMinutes] = useState("00");
   const [timerSeconds, setTImerSeconds] = useState("00");
-  const isMounted = useRef(true);
   let interval = useRef();
+  // const isMounted = useRef(true);
+  //to calculate the stop timmer
   const startTimer = () => {
     const countdownDate = new Date("September 30,2021 00:00:00:00").getTime();
     interval = setInterval(() => {
@@ -27,12 +28,10 @@ function AuctionScreen() {
       if (distance < 0) {
         clearInterval(interval.current);
       } else {
-        if (isMounted.current) {
-          setTImerDays(days);
-          setTImerHours(hours);
-          setTImerMinutes(minutes);
-          setTImerSeconds(dayseconds);
-        }
+        setTImerDays(days);
+        setTImerHours(hours);
+        setTImerMinutes(minutes);
+        setTImerSeconds(dayseconds);
       }
     }, 1000);
   };
@@ -43,7 +42,6 @@ function AuctionScreen() {
     const i = interval.current;
 
     return () => {
-      isMounted.current = false;
       clearInterval(i);
     };
   });

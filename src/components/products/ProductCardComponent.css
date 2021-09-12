@@ -61,4 +61,9 @@
   color: #f4ea2f;
   font-size: 1.2rem;
   cursor: pointer;
+  /* font-size: 200px; */
+}
+.productCard .fa-share-alt:hover,
+.productCard .fa-ellipsis-h:hover {
+  font-size: x-large;
 }

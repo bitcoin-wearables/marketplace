@@ -34,6 +34,10 @@
   top: 10px;
   cursor: pointer;
 }
+.auctionScreen .auctionContent .fa-ellipsis-h:hover {
+  font-size: x-large;
+}
+
 .auctionScreen .auctionContent img {
   height: 20rem;
   object-fit: contain;
@@ -43,7 +47,6 @@
   .auctionScreen {
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
-    /* grid-column-gap: 25px; */
     width: 90%;
   }
 }

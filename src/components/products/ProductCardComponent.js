@@ -9,7 +9,7 @@ function ProductCardComponent({ img, name, url, detail }) {
   return (
     <>
       <div className="productCard">
-        <FontAwesomeIcon icon={faEllipsisH} size="lg" />
+        <FontAwesomeIcon icon={faEllipsisH} />
         <div>
           <div className="imgDiv">
             <img src={img} alt="" />
